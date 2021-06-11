@@ -158,7 +158,7 @@ const portfolios = [
     {
         id: 15,
         category: 'React JS',
-        link1: 'https://github.com/jaxongir0425/e-commerce-app',
+        link1: 'https://github.com/jaxongir0425/admin-panel',
         link2: 'https://t.me/SuperGrand',
         icon1: 'G',
         icon2: 'T',
