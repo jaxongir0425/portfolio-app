@@ -9,4 +9,5 @@
 5. "react-router-dom"
 
 # Deploy
-https://jaxongir-abdusalomov.herokuapp.com/
+
+https://jaxongir-abdusalomov.netlify.app/
