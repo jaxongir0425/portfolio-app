@@ -1,0 +1,87 @@
+/* Navbar Section Style */
+
+.NavBar {
+    height: 100vh;
+}
+
+.nav {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile {
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+    border-bottom: 1px solid #2e344e;
+}
+
+.profile img {
+    width: 62%;
+    height: 88%;
+    border-radius: 100%;
+    border: 5px solid #2e344e;
+    margin-bottom: 1rem;
+}
+
+.nav-items {
+    width: 100%;
+}
+
+.nav-items .nav-item {
+    list-style: none;
+    text-align: center;
+}
+
+.nav-item a {
+    text-decoration: none;
+    font-size: inherit;
+    color: inherit;
+    display: block;
+    padding: .5rem 0;
+    position: relative;
+}
+
+.nav-item a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: .4rem;
+    height: 100%;
+    background-color: #0381ff33;
+    transform-origin: bottom;
+    transform: scale(0);
+    overflow-x: hidden;
+    transition: transform .6s, .1s, width .5s cubic-bezier(1, -0.16, .6, 1.35);
+}
+
+.nav-item a:hover::before {
+    transform: scale(1);
+    width: 100%;
+}
+
+.footer {
+    width: 100%;
+    border-top: 1px solid #2e344e;
+}
+
+.footer p {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.active {
+    background-color: #0381ff33;
+}
+
+@media screen and (max-width: 1000px) {
+    .NavBar {
+        height: 92vh;
+    }
+}
+
+/* Navbar Section Style */

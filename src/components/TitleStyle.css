@@ -1,0 +1,40 @@
+/* Title Style */
+
+.Title {
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: white;
+    position: relative;
+    padding-bottom: 1rem;
+    letter-spacing: 3px;
+}
+
+.Title::before {
+    content: "";
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-color: #0381ff38;
+    width: 6rem;
+    height: .4rem;
+    border-radius: 50px;
+}
+
+.Title::after {
+    content: "";
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-color: #037FFF;
+    width: 3rem;
+    height: .4rem;
+    border-radius: 50px;
+}
+
+.Title span {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    font-size: 4.5rem;
+    opacity: 0.07;
+}

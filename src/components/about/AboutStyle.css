@@ -1,0 +1,327 @@
+/*About Page Style*/
+
+.skillsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+    row-gap: 2rem;
+    margin: 4rem 0;
+}
+
+.skillsContainer h2 {
+    color: #db7575;
+    margin-bottom: .7rem;
+    margin-top: 2rem;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .skillsContainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .skillsContainer h2 {
+        margin-bottom: .7rem;
+        margin-top: 2rem;
+    }
+
+    .services-container {
+
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .skillsContainer {
+
+    }
+
+    .skillsContainer h2 {
+        margin-bottom: 0;
+        margin-top: 6vh;
+    }
+
+    .services-container {
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+}
+
+/*About Page Style*/
+
+
+/*******************************************************************/
+
+
+/*Image Section Style*/
+
+.ImageSection {
+    display: flex;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.img {
+    width: 100%;
+    height: 50vh;
+}
+
+.img img {
+    width: 20rem;
+    object-fit: cover;
+    height: 100%;
+}
+
+.about-info {
+    margin-left: 2rem;
+}
+
+.about-info h4 {
+    font-size: 2rem;
+}
+
+.about-text {
+    padding: 1rem 0;
+}
+
+.about-details {
+    display: flex;
+}
+
+.about-details p {
+    padding: .4rem 0;
+}
+
+.about-details .right-section {
+    margin-left: 2.3rem;
+}
+
+.btn {
+    padding: .5rem 1rem;
+    background-color: #037FFF;
+    outline: none;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 2px;
+    margin-top: 1rem;
+    position: relative;
+}
+
+.btn::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: .5rem;
+    left: 0;
+    background-color: #a4acc4;
+    transition: all 0.4s ease-in-out;
+}
+
+.btn:hover::after {
+    width: 100%;
+}
+
+.resume-link {
+    text-decoration: none;
+}
+
+.accordion1 {
+    background-color: #214c79;
+    color: #abb0c4;
+    cursor: pointer;
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    text-align: center;
+}
+
+.accordion1:hover {
+    background-color: #1c56b8;
+}
+
+.panel1 {
+
+}
+
+@media screen and (max-width: 1200px) {
+    .ImageSection {
+        flex-direction: column;
+    }
+
+    .img img {
+        width: 100%;
+    }
+
+    .about-info {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+}
+
+/*Image Section Style*/
+
+
+/*******************************************************************/
+
+
+/* Skills Section Style */
+
+.SkillsSection {
+
+}
+
+.skills-container {
+    margin-left: 1rem;
+}
+
+.skill-title {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.skill-bar {
+    display: flex;
+    align-items: center;
+}
+
+.skill-text {
+
+}
+
+.skill-progress {
+    position: relative;
+    width: 100%;
+}
+
+/*.skill-progress::before {*/
+/*    position: absolute;*/
+/*    width: 4rem;*/
+/*    height: .4rem;*/
+/*    left: 0;*/
+/*    bottom: 0;*/
+/*    background-color: red;*/
+/*}*/
+
+.progress {
+    width: 100%;
+    height: .5rem;
+    border-radius: 5px;
+    background-color: #0381ff3f;
+    margin-left: 1rem;
+    position: relative;
+}
+
+.inner-progress {
+    border-radius: 5px;
+    background-color: #037FFF;
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+/*Skills Section Style*/
+
+
+/*******************************************************************/
+
+
+/*Service Section Style*/
+
+.ServiceSection {
+
+}
+
+.service {
+    width: 44vh;
+    background-color: #191D2B;
+    border-left: 1px solid #2e344e;
+    border-right: 1px solid #2e344e;
+    border-bottom: 1px solid #2e344e;
+    border-top: 8px solid #2e344e;
+    margin-bottom: 4rem;
+    transition: all .4s ease-in-out;
+}
+
+.service:hover {
+    border-top: 8px solid #037FFF;
+}
+
+.service-content {
+    padding: 1rem;
+    text-align: center;
+}
+
+.service-content img {
+    margin-right: 30%;
+    margin-left: 30%;
+}
+
+.service-content .s-title {
+    text-align: center;
+}
+
+.s-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 1rem;
+    margin: 1rem 0;
+}
+
+.s-title::after {
+    content: "";
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #2e344e;
+}
+
+.s-text {
+    padding: 1rem;
+    display: none;
+    background-color: #2863a0;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1200px) {
+    .ServiceSection {
+
+    }
+
+    .service {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    .service:not(:last-child) {
+
+    }
+
+    .service-content {
+
+    }
+
+    .s-title {
+
+    }
+
+    .s-text {
+
+    }
+}
+
+/*Service Section Style*/
