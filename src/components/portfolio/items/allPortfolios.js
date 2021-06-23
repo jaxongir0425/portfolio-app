@@ -13,6 +13,7 @@ import port12 from "../../../img/portImages/port13.png";
 import port13 from "../../../img/portImages/port14.png";
 import port14 from "../../../img/portImages/port15.png";
 import port15 from "../../../img/portImages/port16.png";
+import port17 from "../../../img/portImages/port17.png";
 
 const portfolios = [
     {
@@ -165,6 +166,16 @@ const portfolios = [
         image: port15,
         title: 'React JS (Admin Panel)'
     },
+    {
+        id: 16,
+        category: 'Full Stack',
+        link1: 'https://github.com/jaxongir0425/app-wallet',
+        link2: 'https://t.me/SuperGrand',
+        icon1: 'G',
+        icon2: 'T',
+        image: port17,
+        title: 'React JS vs Spring Boot (Wallet-Management)'
+    }
 ]
 
 export default portfolios;
